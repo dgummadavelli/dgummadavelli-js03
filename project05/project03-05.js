@@ -22,7 +22,7 @@ let totalSales = 0;
 sales.forEach(addToTotal);
 
 // For loop to generate bar chart of phone sales
-for (let i = 1; i <= phones.length; i++) {
+for (let i = 1; i < phones.length; i++) {
    
    let barChart = "";   // Variable to store HTML code for table cells used to create bar chart
    
@@ -64,4 +64,5 @@ function addToTotal(arrValue) {
 // Function that takes a number value and returns it as a text string with a thousands separator
 function formatNumber(value) {
    return value.toLocaleString();
+
 }
